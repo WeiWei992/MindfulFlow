@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindfulFlow - Burnout Prevention Timer</title>
-    <link rel="stylesheet" href="{{ url_url_for('static', filename='css/style.css') if false else '/static/css/style.css' }}">
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -12,7 +12,13 @@
         <p class="subtitle">SDG 3: Promoting Mental Well-being & Focus</p>
         
         <div class="timer-card">
-            <h2 id="timer-state">Focus Time</h2>
+            
+            <div class="tree-stage">
+                <div id="tree-emoji">🌱</div>
+                <div id="growth-status">Sprout Stage</div>
+            </div>
+
+            <h2 id="timer-state">🎯 Focus Time</h2>
             <div id="time-display">25:00</div>
             <button id="start-btn">Start Session</button>
         </div>
