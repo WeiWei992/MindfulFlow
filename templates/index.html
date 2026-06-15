@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindfulFlow - Burnout Prevention Timer</title>
+    <link rel="stylesheet" href="{{ url_url_for('static', filename='css/style.css') if false else '/static/css/style.css' }}">
+</head>
+<body>
+    <div class="container">
+        <h1>MindfulFlow</h1>
+        <p class="subtitle">SDG 3: Promoting Mental Well-being & Focus</p>
+        
+        <div class="timer-card">
+            <h2 id="timer-state">Focus Time</h2>
+            <div id="time-display">25:00</div>
+            <button id="start-btn">Start Session</button>
+        </div>
+
+        <div id="wellness-modal" class="hidden">
+            <h3>Time for a Mindful Break!</h3>
+            <p id="wellness-tip">Loading your wellness activity...</p>
+            <button id="close-break-btn">Finished Break</button>
+        </div>
+    </div>
+
+    <script src="/static/js/timer.js"></script>
+</body>
+</html>
